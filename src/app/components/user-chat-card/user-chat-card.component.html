@@ -1,3 +1,17 @@
 @if(config){
-    <div class="user-chat-container" [ngClass]="{isActive : config.isActive}"></div>
+    <div class="user-chat-container" [ngClass]="{isActive : config.isActive}">
+        <img class="image" [src]="config.profile" alt="user profile" />
+        <div class="content-section">
+            @if(config.fullName){
+                <span class="full-name">{{config.fullName}}</span>
+            }
+
+            @if(config.text){
+                <span class="message-text">{{config.text}}</span>
+            }
+        </div>
+        @if(config.time){
+            <span class="time-section">{{config.time}}</span>
+        }
+    </div>
 }

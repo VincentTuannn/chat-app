@@ -10,4 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class UserChatCardComponent {
   @Input() config!: UserChatConfig;
+  ngOnInit() {
+    console.log('UserChatConfig:', this.config);
+  }
 }
