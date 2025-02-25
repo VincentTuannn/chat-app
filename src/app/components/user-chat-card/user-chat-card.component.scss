@@ -1,0 +1,14 @@
+.user-chat-container {
+    cursor: pointer;          
+    display: flex;            
+    width: 100%;              
+    gap: 14px;                
+    align-items: center;      
+    padding: 12px;            
+    border-radius: 8px;       
+    height: 100%;            
+}
+
+.isActive{
+    background-color: #EBECF6;
+}

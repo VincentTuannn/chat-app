@@ -1,0 +1,13 @@
+<div class="chat-container">
+    <div class="chat-left"><app-chat-bubble [config]="leftConfig"></app-chat-bubble></div>
+    <div class="chat-right"><app-chat-bubble [config]="rightConfig"></app-chat-bubble></div>
+  </div>
+  <div class="search-input">
+    Tìm kiếm
+    <app-search-input (search)="handleSearch($event)"></app-search-input>
+  </div>
+
+  <div class="user-chat-card">
+    Nhập tin nhắn...
+    <app-user-chat-card ></app-user-chat-card>
+  </div>

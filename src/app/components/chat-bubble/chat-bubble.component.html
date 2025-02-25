@@ -1,0 +1,14 @@
+<div [ngClass]="{
+  'rounded-bl-none': config.position === 'left',
+  'left-bubble': config.position === 'left',
+  'right-bubble': config.position === 'right',
+  'rounded-br-none': config.position === 'right',
+  'justify-start': config.position == 'left',
+  'justify-end': config.position === 'right',
+  'mr-auto': config.position === 'left',
+  'ml-auto': config.position === 'right'
+}" 
+
+class="chatbubble-container">
+  {{config.text}}
+</div>
